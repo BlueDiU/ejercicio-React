@@ -37,14 +37,40 @@ const initialBD = [
 
 function CrudApp() {
   const [dataBase, setDataBase] = useState(initialBD);
+  const [dataToEdit, setDataToEdit] = useState(null);
+
+  const createData = (data) => {
+    data.id = Date.now();
+
+    setDataBase([...dataBase, data]);
+  };
+
+  const updateData = (data) => {
+    let newData = dataBase.map((el) =>
+      el.id === data.id ? data : el
+    );
+
+    setDataBase(newData);
+  };
+
+  const deleteData = (id) => {};
 
   return (
     <div>
       <h2>Crud App</h2>
 
-      <CrudForm />
+      <CrudForm
+        createData={createData}
+        updateData={updateData}
+        dataToEdit={dataToEdit}
+        setDataToEdit={setDataToEdit}
+      />
 
-      <CrudTable data={dataBase} />
+      <CrudTable
+        data={dataBase}
+        setDataToEdit={setDataToEdit}
+        deleteData={deleteData}
+      />
     </div>
   );
 }

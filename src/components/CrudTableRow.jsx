@@ -9,10 +9,16 @@ function CrudTableRow({ el, setDataToEdit, deleteData }) {
         <td>{name}</td>
         <td>{race}</td>
         <td>
-          <button onClick={() => setDataToEdit(el)}>
+          <button
+            onClick={() => setDataToEdit(el)}
+            className="edit"
+          >
             Editar
           </button>
-          <button onClick={() => deleteData(id)}>
+          <button
+            onClick={() => deleteData(id)}
+            className="delete"
+          >
             Eliminar
           </button>
         </td>

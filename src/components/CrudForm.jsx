@@ -52,7 +52,7 @@ function CrudForm({
   };
 
   return (
-    <>
+    <div>
       <h3>{dataToEdit ? 'Editar' : 'Agregar'}</h3>
       <form onSubmit={handleSubmit}>
         <input
@@ -80,7 +80,7 @@ function CrudForm({
           onClick={handleReset}
         />
       </form>
-    </>
+    </div>
   );
 }
 

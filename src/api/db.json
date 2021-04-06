@@ -1,0 +1,34 @@
+{
+  "frameworks": [
+    {
+      "id": 1,
+      "name": "React",
+      "language": "Javascript"
+    },
+    {
+      "id": 2,
+      "name": "Angular",
+      "language": "Javascript"
+    },
+    {
+      "id": 3,
+      "name": "Vue",
+      "language": "Javascript"
+    },
+    {
+      "id": 4,
+      "name": "Laravel",
+      "language": "Php"
+    },
+    {
+      "id": 5,
+      "name": "Django",
+      "language": "Python"
+    },
+    {
+      "id": 6,
+      "name": "Rails",
+      "language": "Ruby"
+    }
+  ]
+}

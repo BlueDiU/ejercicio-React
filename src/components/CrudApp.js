@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import CrudForm from './CrudForm';
-import CrudTable from './CrudTable';
+import CrudForm from './crud/CrudForm';
+import CrudTable from './crud/CrudTable';
+
+import '../index.css';
 
 const initialBD = [
   {
@@ -76,6 +78,10 @@ function CrudApp() {
           updateData={updateData}
           dataToEdit={dataToEdit}
           setDataToEdit={setDataToEdit}
+          placeholderName={{
+            name: 'Name',
+            lang: 'Raze',
+          }}
         />
 
         <CrudTable

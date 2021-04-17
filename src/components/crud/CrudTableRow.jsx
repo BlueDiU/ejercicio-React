@@ -11,13 +11,13 @@ function CrudTableRow({ el, setDataToEdit, deleteData }) {
         <td>
           <button
             onClick={() => setDataToEdit(el)}
-            className="edit"
+            className="btn btn-info"
           >
             Editar
           </button>
           <button
             onClick={() => deleteData(id)}
-            className="delete"
+            className="btn btn-danger"
           >
             Eliminar
           </button>

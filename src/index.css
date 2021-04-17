@@ -13,7 +13,7 @@ body {
   text-align: center;
   font-size: 16px;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
   /* display: flex;
   align-items: center;
   justify-content: center;*/
@@ -38,9 +38,7 @@ input[type='text'] {
   background-color: transparent;
 }
 
-button,
-input[type='submit'],
-input[type='reset'] {
+button {
   border: thin solid #4444;
   border-radius: 0.25rem;
   padding: 0.4rem 1rem;
@@ -51,9 +49,9 @@ input[type='reset'] {
   font-weight: bold;
   font-size: 1rem;
   line-height: 1;
+  text-align: center;
   text-transform: none;
   text-decoration: none;
-  text-align: center;
   vertical-align: middle;
   cursor: pointer;
   outline: 0;

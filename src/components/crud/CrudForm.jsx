@@ -11,6 +11,7 @@ function CrudForm({
   updateData,
   dataToEdit,
   setDataToEdit,
+  placeholderName,
 }) {
   const [form, setForm] = useState(initialForm);
 
@@ -60,7 +61,7 @@ function CrudForm({
           onChange={handleChange}
           value={form.name}
           name="name"
-          placeholder="Nombre"
+          placeholder={placeholderName?.name}
           autoComplete="off"
         />
 
@@ -69,14 +70,19 @@ function CrudForm({
           onChange={handleChange}
           value={form.race}
           name="race"
-          placeholder="Raza"
+          placeholder={placeholderName?.lang}
           autoComplete="off"
         />
 
-        <input type="submit" value="Enviar" />
+        <input
+          type="submit"
+          value="Enviar"
+          className="btn btn-outline-primary mr-3"
+        />
         <input
           type="reset"
           value="Limpiar"
+          className="btn btn-outline-warning"
           onClick={handleReset}
         />
       </form>

@@ -3,32 +3,57 @@
     {
       "id": 1,
       "name": "React",
-      "language": "Javascript"
+      "race": "Javascript"
     },
     {
       "id": 2,
       "name": "Angular",
-      "language": "Javascript"
+      "race": "Javascript"
     },
     {
       "id": 3,
       "name": "Vue",
-      "language": "Javascript"
+      "race": "Javascript"
     },
     {
       "id": 4,
       "name": "Laravel",
-      "language": "Php"
+      "race": "Php"
     },
     {
       "id": 5,
       "name": "Django",
-      "language": "Python"
+      "race": "Python"
     },
     {
       "id": 6,
       "name": "Rails",
-      "language": "Ruby"
+      "race": "Ruby"
+    },
+    {
+      "name": "Next",
+      "race": "javascript",
+      "id": 1618011099225
+    },
+    {
+      "name": "Flask",
+      "race": "Python",
+      "id": 1618011138475
+    },
+    {
+      "name": "Svelte",
+      "race": "Javascript",
+      "id": 1618014651538
+    },
+    {
+      "name": "Symfony",
+      "race": "Php",
+      "id": 1618014729455
+    },
+    {
+      "name": "Express",
+      "race": "Javascript/NodeJS",
+      "id": 1618014753823
     }
   ]
 }

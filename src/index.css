@@ -66,6 +66,10 @@ button {
   background-color: #ec7063;
   color: whitesmoke;
 }
+/* label {
+  display: block;
+  text-align: left !important;
+} */
 
 form {
   margin-bottom: 1rem;

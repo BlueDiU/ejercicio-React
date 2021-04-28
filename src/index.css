@@ -25,7 +25,8 @@ body {
   box-sizing: inherit;
 }
 
-input[type='text'] {
+input[type='text'],
+input[type='email'] {
   border: thin solid #dedede;
   border-radius: 0.5rem;
   padding: 0.75rem;
@@ -36,6 +37,10 @@ input[type='text'] {
   font-size: 1rem;
   line-height: 1;
   background-color: transparent;
+}
+
+textarea {
+  resize: none;
 }
 
 button {

@@ -1,5 +1,7 @@
 import React from 'react';
 import { useForm } from '../hooks/useForm';
+import Loader from './generics/Loader';
+import Message from './generics/Message';
 
 const initialForm = {
   name: '',
@@ -147,6 +149,14 @@ function ContactForm() {
           className="btn btn-outline-primary"
         />
       </form>
+      {loading && <Loader />}
+
+      {response && (
+        <Message
+          msg="Los datos se enviaron correctamente"
+          bgColor="#229954"
+        />
+      )}
     </div>
   );
 }

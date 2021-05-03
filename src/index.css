@@ -36,7 +36,7 @@ input[type='email'] {
   width: 90%;
   font-size: 1rem;
   line-height: 1;
-  background-color: transparent;
+  background-color: white;
 }
 
 textarea {
@@ -75,6 +75,11 @@ button {
   display: block;
   text-align: left !important;
 } */
+
+img {
+  width: 100%;
+  height: auto;
+}
 
 form {
   margin-bottom: 1rem;

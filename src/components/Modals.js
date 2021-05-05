@@ -1,7 +1,9 @@
 import React from 'react';
+
 import { useModal } from '../hooks/useModal';
 import ContactForm from './ContactForm';
 import Modal from './modal/Modal';
+import ModalPortal from './modal/ModalPortal';
 
 function Modals() {
   const [isOpenModal1, openModal1, closeModal1] = useModal(
@@ -11,6 +13,12 @@ function Modals() {
   const [isOpenModal2, openModal2, closeModal2] = useModal(
     false
   );
+
+  const [
+    isOpenModalPortal,
+    openModalPortal,
+    closeModalPortal,
+  ] = useModal(false);
 
   const [
     isOpenContact,
@@ -69,6 +77,28 @@ function Modals() {
       >
         <ContactForm />
       </Modal>
+
+      <button
+        className="btn btn-outline-info ml-5"
+        onClick={openModalPortal}
+      >
+        Contact
+      </button>
+
+      <ModalPortal
+        isOpen={isOpenModalPortal}
+        closeModal={closeModalPortal}
+      >
+        <h3>Portal</h3>
+        <p>
+          Loading component from other DOM Node declared on
+          index.html
+        </p>
+        <img
+          src="https://placeimg.com/400/400/tech"
+          alt="tech"
+        />
+      </ModalPortal>
     </div>
   );
 }
